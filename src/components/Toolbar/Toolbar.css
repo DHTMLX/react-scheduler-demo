@@ -1,0 +1,73 @@
+.tool-bar {
+    background: #ededed;
+    height: 40px;
+    line-height: 14px;
+    padding: 5px 10px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+.time-format-chkbx {
+	display: inline-flex;
+	padding-top: 10px;
+	font-family: Roboto,Arial;
+	user-select: none;
+	font-weight: 500;
+	font-size: 20px;
+	color: rgba(0,0,0,.75);
+}
+
+.time-format-chkbx input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.chkbx-text {
+	position: relative;
+    cursor: pointer;
+	user-select: none;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: Roboto,Arial;
+	margin-left: 10px;
+}
+.chkbx-text:before {
+	content: '12h';
+	text-align: right;
+	padding: 0 10px;
+	position: absolute;
+	top: -8px;
+	left: 0;
+	width: 60px;
+	height: 30px;
+	border-radius: 15px;
+	background: #CDD1DA;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.chkbx-text:after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 2px;
+	width: 25px;
+	height: 25px;
+	border-radius: 15px;
+	background: #FFF;
+	box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: .2s;
+}
+.time-format-chkbx input:checked + .chkbx-text:before {
+	content: '24h';
+	color: white;
+	text-align: left;
+	background: #0288d1;
+}
+.time-format-chkbx input:checked + .chkbx-text:after {
+	left: 53px;
+}
+.time-format-chkbx input:focus + .chkbx-text:before {
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(2,136,209,.7);
+}
