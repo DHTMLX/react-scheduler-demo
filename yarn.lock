@@ -3334,10 +3334,10 @@ dhtmlx-gantt@^7.1.9:
   resolved "https://registry.yarnpkg.com/dhtmlx-gantt/-/dhtmlx-gantt-7.1.9.tgz#3f3f742f606af7865ec5760af521a58bcf0c3893"
   integrity sha512-a1zFTg5kv21qqdAvkhFIItsuxXDR5e9IL9xCJS38VWfkY2n2WKXbiSxXHCiSg+S9lF6asAnkl09PAWaNSJIeyw==
 
-dhtmlx-scheduler@^5.3.13:
-  version "5.3.13"
-  resolved "https://registry.yarnpkg.com/dhtmlx-scheduler/-/dhtmlx-scheduler-5.3.13.tgz#ad68a10e3833a772a5a918d4d1ac787c02b3dbfe"
-  integrity sha512-7Hn5Bzo4rFvAIpDoeyQwY2+JHpC5iLgLQVQfFeu6pR/lGeKXB1b9ktLRRzvl+1uEmbV0iq2lO3n/AkHXEoFNkA==
+dhtmlx-scheduler@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/dhtmlx-scheduler/-/dhtmlx-scheduler-7.0.2.tgz#c37f842383835a5baef8ab3c022f981e513a3fea"
+  integrity sha512-9qrsxy7jcrxEhMs7v3HkQs0D/rtjhh3WyM0PdjgGn5Y7K1NmWqzg5vv0fUX00xj1l/enQDC526xxdVTCCXfj3w==
 
 didyoumean@^1.2.2:
   version "1.2.2"

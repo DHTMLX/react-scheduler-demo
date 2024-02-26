@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'dhtmlx-scheduler';
-import 'dhtmlx-scheduler/codebase/dhtmlxscheduler_material.css';
+import 'dhtmlx-scheduler/codebase/dhtmlxscheduler.css';
 
 const scheduler = window.scheduler;
 
@@ -34,7 +34,7 @@ export default class Scheduler extends Component {
     }
 
     componentDidMount() {
-        scheduler.skin = 'material';
+        scheduler.skin = 'terrace';
         scheduler.config.header = [
             'day',
             'week',
