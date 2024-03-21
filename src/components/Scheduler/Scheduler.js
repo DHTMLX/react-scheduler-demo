@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Scheduler } from "@dhx/trial-scheduler";
 import "@dhx/trial-scheduler/codebase/dhtmlxscheduler.css";
 
-export default function SchedulerView( {events, timeFormatState, onDataUpdated,} ) {
+export default function SchedulerView( {events, timeFormatState, onDataUpdated} ) {
 	let container = useRef();
 	useEffect(() => {
 		let scheduler = Scheduler.getSchedulerInstance();
@@ -23,25 +23,15 @@ export default function SchedulerView( {events, timeFormatState, onDataUpdated,}
 		scheduler.init(container.current, new Date(2024, 5, 10));
 		scheduler.clearAll();
 		scheduler.parse(events);
-
-		scheduler.attachEvent("onEventAdded", (id, ev) => {
-			if (onDataUpdated) {
-				onDataUpdated("create", ev, id);
-			}
+		scheduler.createDataProcessor((type, action, item, id) => {
+			return new Promise((resolve, reject) => {
+				onDataUpdated(action, item, id);
+				// if onDataUpdated changes returns a permanent id of the created item, you can return it from here so dhtmlxGantt could apply it
+				// return resolve({id: databaseId});
+				return resolve();
+			});
 		});
 
-		scheduler.attachEvent("onEventChanged", (id, ev) => {
-			if (onDataUpdated) {
-				onDataUpdated("update", ev, id);
-			}
-		});
-
-		scheduler.attachEvent("onEventDeleted", (id, ev) => {
-			if (onDataUpdated) {
-				onDataUpdated("delete", ev, id);
-			}
-		});
-        
 		function setHoursScaleFormat(state) {
 			scheduler.config.hour_date = state ? "%H:%i" : "%g:%i %A";
 			scheduler.templates.hour_scale = scheduler.date.date_to_str(
