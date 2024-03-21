@@ -1065,6 +1065,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-12.0.0.tgz#a9583a75c3f150667771f30b60d9f059473e62c4"
   integrity sha512-M0qqxAcwCsIVfpFQSlGN5XjXWu8l5JDZN+fPt1LeW5SZexQTgnaEvgXAY+CeygRw0EeppWHi12JxESWiWrB0Sg==
 
+"@dhx/trial-scheduler@^7.0.3":
+  version "7.0.3"
+  resolved "https://npm.dhtmlx.com/@dhx%2ftrial-scheduler/-/trial-scheduler-7.0.3.tgz#1fdb0fcc1eea4fcd27d144bfbadc3fab08323c7b"
+  integrity sha512-JzDMFJk2Dk8FGLG1MfzwZ7g96NrS/jr+17XBqNJPl6z0kDSsR4sRHOffdzMnJyo4sfqWyWRjzIMD4WYeLpctNA==
+
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.5.tgz#33f1b838dbf1f923bfa517e008362b78ddbbf318"
