@@ -1,6 +1,6 @@
 {
-  "name": "scheduler-react",
-  "version": "0.1.0",
+  "name": "react-scheduler-demo",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@dhx/trial-scheduler": "^7.0.3",
