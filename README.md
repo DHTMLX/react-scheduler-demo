@@ -8,7 +8,7 @@
 
 ### Online
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DHTMLX/angular-suite-demo) 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DHTMLX/react-scheduler-demo) 
 
 ### On the local host 
 
