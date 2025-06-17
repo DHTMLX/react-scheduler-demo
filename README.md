@@ -10,6 +10,8 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/DHTMLX/react-scheduler-demo) 
 
+**Please note**, having clicked on this button, you open the **online demo. Don't worry about paying extra!** With GitHub's free plan, [you get 15 GB of storage and 120 hours of Codespaces use each month](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts). This is more than enough to run our demo without any extra costs.
+
 ### On the local host 
 
 ```
@@ -19,7 +21,6 @@ yarn start
 
 ## Useful links
 
-- **[Online demo](https://replit.com/@dhtmlx/dhtmlx-scheduler-with-react)**
 - [Full tutorial](https://dhtmlx.com/blog/use-dhtmlx-scheduler-component-react-js-library-demo/)
 - [Video Guide](https://www.youtube.com/watch?v=UdmAB5Hoqxg)
 - [Learn about DHTMLX Scheduler](https://dhtmlx.com/docs/products/dhtmlxScheduler/)
