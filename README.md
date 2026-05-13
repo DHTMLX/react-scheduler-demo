@@ -2,6 +2,16 @@
 
 [![dhtmlx.com](https://img.shields.io/badge/made%20by-DHTMLX-blue)](https://dhtmlx.com/)
 
+> ### Building a new React app with DHTMLX Scheduler? Start with the official wrapper.
+>
+> DHTMLX ships an official **React Scheduler** wrapper with a declarative component API, typed props, and first-class data binding. It's the recommended starting point for new projects.
+>
+> - Quick-start repo: [react-scheduler-quick-start](https://github.com/DHTMLX/react-scheduler-quick-start)
+> - Documentation: [docs.dhtmlx.com/scheduler/integrations/react/](https://docs.dhtmlx.com/scheduler/integrations/react/)
+> - Product page: [dhtmlxScheduler for React](https://dhtmlx.com/docs/products/dhtmlxScheduler-for-React/)
+>
+> This repo shows the **JS-first integration** — embedding `@dhx/trial-scheduler` directly into React. It remains a valid option if you have a specific reason for low-level integration (Individual/GPL edition, deep customization of internals, or an existing JS-first codebase). For most new apps, prefer the wrapper above.
+
 ![DHTMLX Scheduler with React Demo](https://raw.githubusercontent.com/DHTMLX/react-scheduler-demo/master/scheduler.png)
 
 ## How to start
