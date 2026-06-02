@@ -1,5 +1,5 @@
 {
-  "updateContentCommand": "yarn",
+  "updateContentCommand": "corepack enable && corepack prepare yarn@1.22.22 --activate && yarn --frozen-lockfile",
   "postAttachCommand": "yarn start",
   "customizations": {
     "codespaces": {
