@@ -2,23 +2,31 @@
   "name": "react-scheduler-demo",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "@dhx/trial-scheduler": "^7.2.3",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "@dhx/trial-scheduler": "^7.2.14",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "browserslist": {
     "production": [
